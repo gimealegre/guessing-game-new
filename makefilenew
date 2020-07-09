@@ -1,0 +1,11 @@
+all: README3.md
+
+README3.md: 
+	echo "## Unix Workbench Guessing Game" > README3.md
+	echo "- **Make was run at:**" >> README3.md
+	date >> README3.md
+
+README3.md: guessinggamenew.sh
+	echo "- **guessingdame.sh has the following number of lines:**" >> README3.md
+	echo “wc -l guessingdamenew.sh” >> README3.MD
+
